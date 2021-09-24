@@ -20,6 +20,10 @@ python scraper.py
 * `PAGE` - number of items to retrieve per http request (prob shouldn't go over 100)
 * `PAGE_COUNT` - number of pages (i.e. requests) to iterate through (akin to pressing the "next" button)
 
+## Stonk matching
+
+`allisted.txt` defines stonk symbols to search for (commal delimited). Any text in a title that matches one of these will be accounted for. Edit to add/remove
+
 ### Rate-limiting
 
 `friendlybot.py` defines a class that honors `retry-after` headers on 429's, and sleeps to space out requests made close together.
