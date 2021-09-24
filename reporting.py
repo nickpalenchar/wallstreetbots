@@ -2,7 +2,7 @@
 
 def report_counts(d: dict):
     """converts dict counts into printable report"""
-    sorted_counts = sorted(d.items(), key=lambda x: x[1])
+    sorted_counts = sorted(d.items(), key=lambda x: x[1], reverse=True)
     print()
     print(f'STONKS MENTIONED (descending)')
     print( '-----------------------------')
